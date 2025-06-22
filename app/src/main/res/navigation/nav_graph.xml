@@ -1,0 +1,36 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.edupredict.ui.HomeFragment"
+        android:label="Home" >
+
+        <!-- Tambahkan action navigasi ke Simulasi -->
+        <action
+            android:id="@+id/action_homeFragment_to_simulationFragment"
+            app:destination="@id/simulationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.edupredict.ui.AboutFragment"
+        android:label="Tentang Aplikasi" />
+
+    <fragment
+        android:id="@+id/featureFragment"
+        android:name="com.example.edupredict.ui.FeatureFragment"
+        android:label="Fitur" />
+
+    <fragment
+        android:id="@+id/modelArchitectureFragment"
+        android:name="com.example.edupredict.ui.ModelArchitectureFragment"
+        android:label="Arsitektur Model" />
+
+    <fragment
+        android:id="@+id/simulationFragment"
+        android:name="com.example.edupredict.ui.SimulationFragment"
+        android:label="Simulasi" />
+</navigation>

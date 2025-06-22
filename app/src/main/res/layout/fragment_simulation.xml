@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="Simulasi Prediksi Nilai Matematika"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gender -->
+        <TextView
+            android:text="Jenis Kelamin"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- Race -->
+        <TextView
+            android:text="Etnis/Ras"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerRace"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- Parental Education -->
+        <TextView
+            android:text="Pendidikan Orang Tua"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerParentEdu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- Lunch -->
+        <TextView
+            android:text="Jenis Makan Siang"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerLunch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- Test Prep -->
+        <TextView
+            android:text="Kursus Persiapan Ujian"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerTestPrep"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- Reading Score -->
+        <TextView
+            android:text="Nilai Membaca"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editReading"
+            android:hint="Contoh: 70"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="12dp" />
+
+        <!-- Writing Score -->
+        <TextView
+            android:text="Nilai Menulis"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editWriting"
+            android:hint="Contoh: 75"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="12dp" />
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_marginTop="24dp" />
+
+        <!-- Predict Button -->
+        <Button
+            android:id="@+id/btnPredict"
+            android:text="Lakukan Prediksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/txtResult"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
