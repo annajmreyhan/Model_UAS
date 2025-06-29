@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:padding="24dp"
         android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="Tentang Aplikasi"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="12dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:text="Aplikasi ini menggunakan model (ANN) untuk memprediksi nilai matematika akhir siswa berdasarkan data latar belakang dan perilaku belajar. Dikembangkan dengan TensorFlow Lite dan ditanamkan ke aplikasi Android."
+            android:id="@+id/txtAboutApp"
             android:textSize="16sp"
-            android:layout_width="wrap_content"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
 </ScrollView>

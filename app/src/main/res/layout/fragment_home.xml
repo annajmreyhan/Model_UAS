@@ -40,16 +40,48 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:src="@drawable/edupredict_logo"
-        android:layout_marginTop="20dp"
-        android:contentDescription="Ilustrasi Edukasi" />
+            android:layout_marginTop="20dp"
+            android:contentDescription="Ilustrasi Edukasi" />
 
         <!-- Tombol Simulasi -->
         <Button
             android:id="@+id/btnStartSimulation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mulai Simulasi"
+            android:text="🔍 Simulasi"
             android:layout_marginTop="24dp" />
+
+        <!-- Tombol Dataset -->
+        <Button
+            android:id="@+id/btnViewDataset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Dataset"
+            android:layout_marginTop="12dp" />
+
+        <!-- Tombol Fitur -->
+        <Button
+            android:id="@+id/btnViewFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧩 Fitur Aplikasi"
+            android:layout_marginTop="12dp" />
+
+        <!-- Tombol Model -->
+        <Button
+            android:id="@+id/btnViewModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧠 Arsitektur Model"
+            android:layout_marginTop="12dp" />
+
+        <!-- Tombol Tentang -->
+        <Button
+            android:id="@+id/btnAboutApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ Tentang Aplikasi"
+            android:layout_marginTop="12dp" />
 
     </LinearLayout>
 </ScrollView>

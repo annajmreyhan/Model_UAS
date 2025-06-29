@@ -33,4 +33,8 @@
         android:id="@+id/simulationFragment"
         android:name="com.example.edupredict.ui.SimulationFragment"
         android:label="Simulasi" />
+    <fragment
+        android:id="@+id/datasetFragment"
+        android:name="com.example.edupredict.ui.DatasetFragment"
+        android:label="Dataset" />
 </navigation>

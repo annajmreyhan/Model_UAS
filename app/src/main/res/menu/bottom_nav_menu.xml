@@ -2,21 +2,24 @@
     <item
         android:id="@+id/homeFragment"
         android:title="Home"
-        android:icon="@android:drawable/ic_menu_info_details"/>
-    <item
-        android:id="@+id/aboutFragment"
-        android:title="Tentang"
-        android:icon="@android:drawable/ic_menu_help"/>
+        android:icon="@android:drawable/ic_menu_info_details" />
     <item
         android:id="@+id/featureFragment"
         android:title="Fitur"
-        android:icon="@android:drawable/ic_menu_manage"/>
+        android:icon="@android:drawable/ic_menu_manage" />
+
     <item
         android:id="@+id/modelArchitectureFragment"
         android:title="Model"
-        android:icon="@android:drawable/ic_menu_compass"/>
+        android:icon="@android:drawable/ic_menu_compass" />
+
     <item
         android:id="@+id/simulationFragment"
         android:title="Simulasi"
-        android:icon="@android:drawable/ic_menu_send"/>
+        android:icon="@android:drawable/ic_menu_send" />
+
+    <item
+        android:id="@+id/datasetFragment"
+        android:title="Dataset"
+        android:icon="@android:drawable/ic_menu_agenda" />
 </menu>

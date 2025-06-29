@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,19 +10,125 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- Judul -->
         <TextView
-            android:text="Arsitektur Model ANN"
-            android:textSize="20sp"
+            android:text="🧠 Arsitektur Model"
             android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#000000"
             android:layout_marginBottom="12dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:text="• Input Layer: n fitur\n• Hidden Layer 1: 64 neuron\n• Hidden Layer 2: 32 neuron\n• Output Layer: 1 neuron (nilai G3)"
+            android:text="Model machine learning ini dibangun untuk memprediksi kelulusan matematika siswa berdasarkan data latar belakang dan nilai baca/tulis. Prosesnya terdiri dari tahapan berikut:"
             android:textSize="16sp"
-            android:layout_width="wrap_content"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Preprocessing -->
+        <TextView
+            android:text="📌 Preprocessing"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <ImageView
+            android:src="@drawable/preprocessing1"
+            android:contentDescription="Preprocessing 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:text="Data kategori diubah menjadi angka menggunakan LabelEncoder agar bisa diproses oleh model."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:src="@drawable/preprocessing2"
+            android:contentDescription="Preprocessing 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:text="Target (math score) diklasifikasikan ke dalam 1 (lulus) dan 0 (tidak lulus)."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:src="@drawable/preprocessing3"
+            android:contentDescription="Preprocessing 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:text="Normalisasi data dengan StandardScaler untuk membantu proses pelatihan model."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Modeling -->
+        <TextView
+            android:text="🧠 Modeling"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/modeling"
+            android:contentDescription="Modeling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:text="Model ANN terdiri dari 3 lapisan Dense: 64-neuron, 32-neuron, dan 1-neuron output dengan aktivasi sigmoid untuk klasifikasi."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Evaluasi -->
+        <TextView
+            android:text="🧪 Evaluasi"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/evaluation"
+            android:contentDescription="Evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:text="Model dievaluasi menggunakan Confusion Matrix dan Classification Report untuk melihat akurasi, precision, recall, dan f1-score."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
     </LinearLayout>
 </ScrollView>
